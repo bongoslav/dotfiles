@@ -1,0 +1,251 @@
+{
+  /**
+   * visual in editor
+   */
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.smoothScrolling": true,
+  // cursor
+  "editor.cursorBlinking": "solid",
+
+  "editor.fontSize": 14,
+  "editor.rulers": [100],
+  "editor.minimap.maxColumn": 100,
+  "prettier.printWidth": 100,
+
+  "workbench.startupEditor": "none",
+
+  "editor.tabSize": 2,
+
+  "workbench.sideBar.location": "right",
+
+  // theme
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "JetBrains New UI Dark Theme",
+  "workbench.preferredDarkColorTheme": "JetBrains New UI Dark Theme",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
+
+  // brackets
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": false,
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  // functional in editor
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.completeFunctionCalls": true,
+
+  // HTML tags
+  "editor.linkedEditing": true,
+
+  // dictionary
+  "cSpell.userWords": [
+    "AUTOINCREMENT",
+    "Backpressure",
+    "bongoslav",
+    "Borislav",
+    "Chainlink",
+    "Cloudinary",
+    "DATETIME",
+    "exif",
+    "GLTF",
+    "Kata",
+    "lxml",
+    "middlewares",
+    "nums",
+    "sequelize",
+    "Signup",
+    "tsoa",
+    "upvote",
+    "upvotes",
+    "websockets",
+    "wireframe"
+  ],
+
+  // terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+
+  // VIM related
+  "editor.lineNumbers": "relative",
+
+  // vscord
+  "vscord.status.details.text.viewing": "In {file_name}{file_extension} ",
+  "vscord.status.details.text.editing": "In {file_name}{file_extension} ",
+  "vscord.status.problems.enabled": false,
+
+  // gitlens
+  "gitlens.currentLine.enabled": false,
+  "gitlens.launchpad.indicator.enabled": false,
+
+  // default profile - fish for OSX and Linux
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "errorLens.exclude": ["Unknown word"],
+
+  // telemetry
+  "telemetry.telemetryLevel": "off",
+  "gitlens.telemetry.enabled": false,
+  "code-runner.enableAppInsights": false,
+
+  /**
+   * - - - - - - - - - -
+   * - - - - VIM - - - -
+   * - - - - - - - - - -
+   */
+  "vim.leader": ",",
+  // "editor.scrollBeyondLastLine": false,
+  "vim.smartRelativeLine": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<space>"],
+      "after": ["c", "i", "w"]
+    },
+    {
+      "before": ["<Leader>", "f", "s"],
+      "commands": ["workbench.action.quickTextSearch"]
+    },
+    {
+      "before": ["<Leader>", "f", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      // this one is used in combination with keybindings.json
+      // Cmd + B - toggle explorer view
+      "before": ["<Leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<Leader>", "x"],
+      "commands": ["workbench.view.extensions"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+    {
+      "before": ["<Leader>", "n", "h"],
+      "commands": [":noh"]
+    },
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["<Leader>", "j"],
+      "after": ["J"]
+    },
+    // tabs
+    {
+      "before": ["<Leader>", "t", "t"],
+      "commands": [":tabnew"]
+    },
+    {
+      "before": ["<Leader>", "t", "n"],
+      "commands": [":tabnext"]
+    },
+    {
+      "before": ["<Leader>", "t", "p"],
+      "commands": [":tabprev"]
+    },
+    {
+      "before": ["<Leader>", "t", "o"],
+      "commands": [":tabo"]
+    },
+
+    {
+      "before": ["g", "p"],
+      "commands": ["editor.action.peekDefinition"]
+    }
+  ],
+
+  "vim.commandLineModeKeyBindings": [
+    {
+      "before": ["W", "<CR>"],
+      "after": ["w", "<CR>"]
+    }
+  ],
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  /**
+   * APC Customize UI++
+   */
+  "apc.activityBar": {
+    "position": "bottom",
+    "size": 24,
+    "hideSettings": true
+  },
+  "apc.electron": {
+    "frame": false,
+    "titleBarStyle": "hiddenInset"
+    // "vibrancy": "ultra-dark",
+    // if we want transparency:
+    // "transparent": false,
+    // "opacity": 0.95,
+    // "visualEffectState": "active"
+  },
+  "apc.font.family": "JetBrains Mono",
+
+  // Silence the Noise
+  "editor.hover.enabled": true,
+  "workbench.tips.enabled": false,
+  "editor.colorDecorators": false,
+  "editor.lightbulb.enabled": "off",
+
+  // title bar
+  "window.titleBarStyle": "native",
+  "window.customTitleBarVisibility": "never",
+  "apc.stylesheet": {
+    ".title-label": "display: none !important",
+    // ".title-actions": "display: none !important",
+    ".tabs-and-actions-container > .editor-actions": "display: none !important",
+    ".titlebar-center": "display: none !important",
+
+    // Command palette
+    ".quick-input-widget": {
+      "transform": "translateY(-50%) !important",
+      "top": "50% !important"
+    }
+  },
+
+  "apc.menubar.compact": true,
+  "apc.statusBar": {
+    "position": "editor-bottom"
+  },
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  // codesnap extension
+  "codesnap.shutterAction": "copy",
+  "codesnap.showWindowControls": false,
+
+  // Formatters
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
