@@ -27,7 +27,9 @@ create_symlink() {
 }
 
 # Create symlinks
-create_symlink ~/dotfiles/.zshrc ~/.zshrc
+create_symlink ~/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
+create_symlink ~/dotfiles/.config/fish/functions ~/.config/fish/functions
+create_symlink ~/dotfiles/.config/fish/completions ~/.config/fish/completions
 create_symlink ~/dotfiles/.oh-my-zsh/custom ~/.oh-my-zsh/custom
 create_symlink ~/dotfiles/.config/Code/User/settings.json ~/Library/Application\ Support/Code/User/settings.json
 create_symlink ~/dotfiles/.config/nvim ~/.config/nvim

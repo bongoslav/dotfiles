@@ -1,7 +1,7 @@
 # Dotfiles
 
 This repository contains my personal dotfiles for:
-- Zsh (Oh My Zsh)
+- Fish shell
 - VS Code
 - Neovim
 - Karabiner (MacOS custom keybindings)
